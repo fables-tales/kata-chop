@@ -144,3 +144,9 @@ def chop2(item, values, min = 0, max = None):
 This seems to pass all the tests. As a matter of course I noted that the
 calculation to compute the midpoint of the high and low values is now
 duplicated, so I pulled it out into it's own method and ran the tests again.
+
+It's worth noting that whilst we had roughly the same number of errors today as
+yesterday, it took me a lot less time to actually come up with something that I
+thought I could run that would be roughly correct. This is partly due to having
+thought about today's solution in 'down' time yesterday, and having yesterday's
+solution open on my computer whilst implementing this solution.
