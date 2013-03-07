@@ -1,9 +1,13 @@
+
+def midpoint(a, b):
+    return (a+b)/2
+
 def chop1(item, values):
     high = len(values)-1
     low  = 0
 
     while high >= low:
-        mid = (high + low)/2
+        mid = midpoint(high, low)
         if values[mid] < item:
             low = mid + 1
         elif values[mid] > item:
