@@ -11,3 +11,18 @@ def chop1(item, values):
         else:
             return mid
     return -1
+
+def chop2(item, values, min = 0, max = None):
+    if max is None:
+        max = len(values)-1
+
+    mid = (max+min)/2
+
+    if min > max:
+        return -1
+    elif values[mid] > item:
+        return chop2(item, values, min, mid-1)
+    elif values[mid] < item:
+        return chop2(item, values, mid+1, max)
+    else:
+        return mid
