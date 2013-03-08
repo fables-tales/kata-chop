@@ -347,7 +347,7 @@ access is constant time, which it clearly isn't. Informally:
   operation performed at any individual step is grabbing the subarray slice.
 * The complexity is therefore expressed as ![Sum](latex.gif)
 * This works out to be O(n) time complexity
-  ([Wolfra Alpha](https://www.wolframalpha.com/input/?i=sum+from+i%3D0+to+log2%28n%29+of+%28n%2F%282%5Ei%29%29))
+  ([Wolfram Alpha](https://www.wolframalpha.com/input/?i=sum+from+i%3D0+to+log2%28n%29+of+%28n%2F%282%5Ei%29%29))
 
 
 This has been a pretty interesting exercise: it's made me think about different
