@@ -20,7 +20,7 @@ def chop2(item, values, min = 0, max = None):
     if max is None:
         max = len(values)-1
 
-    mid = (max+min)/2
+    mid = midpoint(max, min)
 
     if min > max:
         return -1
