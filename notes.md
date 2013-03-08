@@ -338,7 +338,7 @@ takes the average, a sample run of which is reported below:
 We can see here that the recursive implementation performs only slightly worse
 than the iterative implementation: this is probably due to function calls being
 expensive in python. A quick google search indicates that slicing in python is
-[O(k) on the size of theslice](http://wiki.python.org/moin/TimeComplexity),
+[O(k) on the size of the slice](http://wiki.python.org/moin/TimeComplexity),
 which would explain why the recursive tree implementation loses.
 
 Regarding that note on the chop3 implementation, this will have an effect on
