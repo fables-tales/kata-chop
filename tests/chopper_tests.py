@@ -28,3 +28,7 @@ def test_chop1():
 
 def test_chop2():
     run_chop(chopper.chop2)
+
+
+def test_chop3():
+    run_chop(chopper.chop3)
