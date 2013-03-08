@@ -1,3 +1,4 @@
+import time
 
 def midpoint(a, b):
     return (a+b)/2
@@ -53,3 +54,17 @@ def chop3(item, values):
         return mid + 1 + chop_result if chop_result != -1 else -1
     else:
         return mid
+
+if __name__ == "__main__":
+    item = 37
+    values = range(10000)
+    n_trials = 10000
+    for chopper in [chop1, chop2, chop3]:
+        total_time = 0
+        for i in xrange(n_trials):
+            start = time.time()
+            i = chopper(item, values)
+            end = time.time()
+            total_time += end-start
+            assert i != -1
+        print chopper, total_time*1.0/n_trials
