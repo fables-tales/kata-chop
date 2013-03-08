@@ -2,6 +2,10 @@
 
 ##Day 1
 
+**Authors note**: The notes for this day were rather short, I think this is
+because I wasn't in the mindset of really trying to explain the solution at this
+point.
+
 Setup nose tests and chopper that returns -1 on all calls. First assertion
 error hit as expected:
 
@@ -38,6 +42,8 @@ def chop1(item, values):
 The implementation here goes into an infinite loop. This is because we need to
 update high or low to not be the mid item, but the mid item +1 or -1
 respectively (this reduces the size of the range when the array is of length 1)
+
+
 
 ###Second implementation
 
